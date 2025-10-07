@@ -193,7 +193,7 @@ def get_and_save_lulc(city_name, output_dir="output"):
 
 def plot_lulc(gdf, city_name, output_dir="output"):
     print(f"[INFO] Plotting LULC map for {city_name}...")
-    if gdf is None or gdf.empty:
+    if gdf is None or getattr(gdf, 'empty', True):
         print(f"[❌] No data to plot for {city_name}.")
         return
     fig, ax = plt.subplots(figsize=(12, 10))
@@ -423,7 +423,7 @@ def get_building_footprints(city_name="Pune, India"):
 
 def plot_buildings(buildings, title="Building Footprints", save_plot=True):
     logger.info("[🖼️] Plotting building footprints...")
-    if buildings.empty:
+    if buildings is None or getattr(buildings, 'empty', True):
         logger.warning("[⚠️] No buildings to plot.")
         return
     try:
