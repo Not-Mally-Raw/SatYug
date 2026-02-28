@@ -1,40 +1,36 @@
-# 🛰️ Geo-LLM: Chain-of-Thought GIS Automation System
+#  SatYug: Chain-of-Thought GIS Automation System
 
-**ISRO Bhartiya Antariksh Hackathon 2025 - Problem Statement 4**
+<img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"> <img src="https://img.shields.io/badge/Streamlit-1.0+-red.svg" alt="Streamlit">
 
-> *Designing a Chain-of-Thought-Based LLM System for Solving Complex Spatial Analysis Tasks Through Intelligent Geoprocessing Orchestration*
-
-## 🎯 Project Overview
+## Project Overview
 
 This project implements an advanced AI-powered geospatial analysis system that combines Large Language Models (LLMs) with comprehensive GIS workflows. The system can automatically generate and execute complex spatial analysis workflows from natural language queries using Chain-of-Thought reasoning.
 
-## 🚀 Key Features
-
-### 🧠 Enhanced Reasoning Engine
+### Thought-induced Reasoning Engine
 - **Structured Workflow Templates**: Pre-built patterns for common GIS tasks
 - **Context-Aware Query Analysis**: Intelligent parameter extraction and workflow customization
 - **Chain-of-Thought Implementation**: Step-by-step transparent reasoning process
 - **Dynamic Code Generation**: Automatic Python code generation for GIS operations
 
-### 🔄 Intelligent Automation System
+### Automation System
 - **Multi-Tool Integration**: GDAL, GeoPandas, GRASS GIS, OSMnx, QGIS, Rasterio, WhiteboxTools
 - **Workflow Parsing & Execution**: Dynamic function mapping and execution
 - **Real-time Progress Tracking**: Live execution monitoring with detailed analytics
 - **Comprehensive Error Handling**: Robust error recovery and reporting
 
-### 📚 Advanced RAG Pipeline
+### Advanced RAG Pipeline
 - **Multi-Source Knowledge Retrieval**: Semantic search across comprehensive GIS documentation
 - **FAISS Vector Embeddings**: Pre-built indices for 7 major GIS tools
 - **Quality Control Mechanisms**: Content validation and grounding verification
 - **LangGraph Workflows**: Sophisticated reasoning chains with decision points
 
-### 🎨 Professional User Interface
+###  User Interface
 - **Streamlit Web Application**: Modern, responsive interface
 - **Real-time Visualization**: Automatic chart and map generation
 - **Execution Analytics**: Performance metrics and success tracking
 - **Debug Capabilities**: Detailed logging and troubleshooting tools
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ├── automation1.py           # Core GIS automation functions
@@ -54,7 +50,7 @@ This project implements an advanced AI-powered geospatial analysis system that c
     └── whitebox_faiss/
 ```
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 - **LLMs**: Groq (Llama3-70B), OpenAI (GPT-4)
 - **GIS Libraries**: GDAL, GeoPandas, Rasterio, WhiteboxTools, OSMnx
@@ -65,53 +61,19 @@ This project implements an advanced AI-powered geospatial analysis system that c
 
 ### Requirements Coverage
 
-| Requirement | Implementation | Status |
-|-------------|---------------|--------|
-| LLM Integration | Groq/OpenAI with multiple models | ✅ Complete |
-| Chain-of-Thought Reasoning | Structured templates + CoT prompts | ✅ Complete |
-| Natural Language Queries | Advanced query parsing + parameter extraction | ✅ Complete |
-| GIS Tool Integration | 7+ tools with proper APIs | ✅ Complete |
-| RAG Implementation | Multi-source documentation retrieval | ✅ Complete |
-| Workflow Generation | JSON/structured + executable code | ✅ Complete |
-| Error Handling | Comprehensive error management | ✅ Complete |
-| User Interface | Professional Streamlit application | ✅ Complete |
+| Requirement | Implementation |
+|-------------|---------------|
+| LLM Integration | Groq/OpenAI with multiple models |
+| Chain-of-Thought Reasoning | Structured templates + CoT prompts |
+| Natural Language Queries | Advanced query parsing + parameter extraction |
+| GIS Tool Integration | 7+ tools with proper APIs |
+| RAG Implementation | Multi-source documentation retrieval |
+| Workflow Generation | JSON/structured + executable code |
+| Error Handling | Comprehensive error management |
+| User Interface | Professional Streamlit application |
 
-## 🚀 Quick Start
 
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Not-Mally-Raw/SatYug.git
-cd SatYug
-
-# Install dependencies
-pip install streamlit groq langchain faiss-cpu sentence-transformers
-pip install gdal geopandas rasterio whitebox osmnx matplotlib
-
-# Set up environment variables
-export GROQ_API_KEY="your_groq_api_key"
-export OPENAI_API_KEY="your_openai_api_key"  # Optional
-```
-
-### Running the Application
-
-```bash
-# Start the Streamlit interface
-streamlit run enhanced_streamlit_app.py
-
-# Or run the integrated system directly
-python integrated_system.py
-```
-
-### Example Queries
-
-- "Generate a comprehensive flood risk analysis for Mumbai including DEM, land use, and population data"
-- "Analyze urban heat island effect in Delhi using land cover and building density"
-- "Create a multi-layer environmental assessment for Bangalore with terrain, hydrology, and LULC"
-- "Perform watershed analysis for Chennai including flow accumulation and wetness index"
-
-## 📊 Demo Capabilities
+## System Capabilities
 
 ### Supported Analysis Types
 - **Flood Risk Assessment**: DEM analysis, flow accumulation, wetness index
@@ -127,7 +89,7 @@ python integrated_system.py
 - Vector data in multiple formats
 - Detailed execution reports
 
-## 🏆 Competitive Advantages
+##  Competitive Advantages
 
 1. **Advanced AI Integration**: Sophisticated LLM reasoning with structured workflows
 2. **Comprehensive Tool Coverage**: 7+ major GIS tools in unified interface
@@ -135,7 +97,7 @@ python integrated_system.py
 4. **Real-world Applications**: Practical solutions for actual geospatial challenges
 5. **Scalable Architecture**: Modular design for easy extension and deployment
 
-## 🎯 Future Enhancements
+##  Future Enhancements
 
 - Integration with Bhoonidhi and other Indian satellite data sources
 - Advanced evaluation metrics and benchmarking
